@@ -15,8 +15,4 @@ public class ModalComponent {
     public SelenideElement modalComponent(){
         return locator;
     }
-    public ModalComponent clickOpenButton() {
-        locator.click();
-        return Selenide.page(ModalComponent.class);
-    }
 }

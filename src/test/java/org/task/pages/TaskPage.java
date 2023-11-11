@@ -7,15 +7,11 @@ import org.task.pages.components.ModalComponent;
 
 public class TaskPage {
 
-    ModalComponent component;
-
-    public TaskPage(ModalComponent component) {
-        this.component = component;
-    }
+    ModalComponent component = new ModalComponent();
+    private final SelenideElement locator = component.modalComponent();
 
     public ModalComponent clickOpenButton() {
-        component.clickOpenButton();
+        locator.click();
         return Selenide.page(ModalComponent.class);
     }
-
 }
