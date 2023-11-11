@@ -12,9 +12,6 @@ public class ModalComponent {
 
     private final SelenideElement locator = $("");
 
-    public SelenideElement modalComponent(){
-        return locator;
-    }
     public ModalComponent clickOpenButton() {
         locator.click();
         return Selenide.page(ModalComponent.class);

@@ -8,10 +8,9 @@ import org.task.pages.components.ModalComponent;
 
 public class DeliveryPage {
     ModalComponent component = new ModalComponent();
-    private final SelenideElement locator = component.modalComponent();
 
     public ModalComponent clickOpenButton() {
-        locator.click();
+        component.clickOpenButton();
         return Selenide.page(ModalComponent.class);
     }
 }

@@ -7,11 +7,7 @@ import org.task.pages.components.ModalComponent;
 
 public class TaskPage {
 
-    ModalComponent component;
-
-    public TaskPage(ModalComponent component) {
-        this.component = component;
-    }
+    ModalComponent component = new ModalComponent();
 
     public ModalComponent clickOpenButton() {
         component.clickOpenButton();

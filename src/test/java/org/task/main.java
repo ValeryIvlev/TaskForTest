@@ -8,8 +8,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class main {
     public static void main(String[] args) {
-        ModalComponent modalComponent = new ModalComponent();
-        TaskPage taskPage = new TaskPage(modalComponent);
 
 
     }
